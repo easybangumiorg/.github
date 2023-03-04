@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+body {
+  font-weight: normal;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button {
+  cursor: pointer;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+i,
+span,
+a {
+  display: inline-block;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 0px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+ul, ol {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0px;
+}
+
+.img-bg {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 450px;
+  }
+}
+
+.logo img {
+  width: 50%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .img-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .img-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .odd-col {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+.slick-slide:focus {
+  outline: 0;
+}
+
+.common-btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.common-btn::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: inherit;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.common-btn:hover::after {
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+input {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 16px;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+}
+
+input::-webkit-input-placeholder {
+  font-size: 16px;
+}
+
+input:-ms-input-placeholder {
+  font-size: 16px;
+}
+
+input::-ms-input-placeholder {
+  font-size: 16px;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #2F80ED;
+}
+
+.subscribe-form-1 {
+  position: relative;
+  max-width: 570px;
+}
+
+.subscribe-form-1 input {
+  padding: 20px 25px;
+  width: 100%;
+}
+
+.subscribe-form-1 button {
+  padding: 20px 17px;
+  color: #fff;
+  border: 1px solid transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 767px) {
+  .subscribe-form-1 button {
+    position: relative;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .subscribe-form-1 button {
+    position: absolute;
+  }
+}
+
+.countdown {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.countdown .single-count-content {
+  position: relative;
+  padding: 0 40px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .countdown .single-count-content {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .countdown .single-count-content {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .countdown .single-count-content {
+    padding: 0 20px;
+  }
+}
+
+.countdown .single-count-content::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 50px;
+}
+
+@media (max-width: 767px) {
+  .countdown .single-count-content::after {
+    top: -10px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .countdown .single-count-content::after {
+    top: -5px;
+  }
+}
+
+.countdown .single-count-content:first-child {
+  padding-left: 0px;
+}
+
+.countdown .single-count-content:last-child {
+  padding-right: 0px;
+}
+
+.countdown .single-count-content:last-child::after {
+  display: none;
+}
+
+.countdown .single-count-content .count {
+  font-size: 50px;
+}
+
+@media (max-width: 767px) {
+  .countdown .single-count-content .count {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .countdown .single-count-content .count {
+    font-size: 45px;
+  }
+}
+
+.countdown .single-count-content .text {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .countdown .single-count-content .text {
+    font-size: 15px;
+  }
+}
+
+.header {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.header .social-links {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .header .social-links {
+    display: none;
+  }
+}
+
+.header .social-links ul li {
+  display: inline-block;
+}
+
+.header .social-links ul li:first-child a {
+  margin-left: 0;
+}
+
+.header .social-links ul li a {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-left: 40px;
+}
+
+main.main {
+  position: relative;
+}
+
+main .header {
+  position: unset;
+  padding-top: 50px;
+}
+
+main .main-wrapper {
+  font-family: "Open Sans", sans-serif;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 120px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  main .main-wrapper {
+    padding-bottom: 120px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  main .main-wrapper {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  main .main-wrapper {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+}
+
+main .main-wrapper .content-wrapper h1 {
+  font-size: 60px;
+  font-weight: 400;
+  color: #0F2137;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  main .main-wrapper .content-wrapper h1 {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 767px) {
+  main .main-wrapper .content-wrapper h1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  main .main-wrapper .content-wrapper h1 {
+    font-size: 50px;
+  }
+}
+
+main .main-wrapper .content-wrapper p {
+  color: #343D48;
+  font-size: 16px;
+  line-height: 34px;
+}
+
+main .main-wrapper .content-wrapper .countdown .single-count-content::after {
+  content: ':';
+  color: rgba(15, 33, 55, 0.3);
+}
+
+@media (max-width: 767px) {
+  main .main-wrapper .content-wrapper .countdown .single-count-content::after {
+    top: -10px;
+    font-size: 45px;
+  }
+}
+
+main .main-wrapper .content-wrapper .countdown .single-count-content .count {
+  font-weight: 700;
+  color: #0F2137;
+}
+
+main .main-wrapper .content-wrapper .countdown .single-count-content .text {
+  color: rgba(52, 61, 72, 0.5);
+}
+
+main .main-wrapper .content-wrapper .subscribe-form {
+  max-width: 470px;
+}
+
+main .main-wrapper .content-wrapper .subscribe-form input {
+  border-color: rgba(52, 61, 72, 0.5);
+  padding-left: 55px;
+}
+
+main .main-wrapper .content-wrapper .subscribe-form input:focus {
+  border-color: #1A73E8;
+}
+
+main .main-wrapper .content-wrapper .subscribe-form i.lni-envelope {
+  position: absolute;
+  left: 25px;
+  top: 23px;
+  font-size: 18px;
+}
+
+main .main-wrapper .content-wrapper .subscribe-form button {
+  margin-top: 20px;
+  position: relative;
+  background: #1A73E8;
+  padding: 12px 24px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  border-radius: 12px
+}
+
+main .main-wrapper .content-wrapper .subscribe-form a {
+  color: #1A73E8;
+}
+
+main .main-wrapper .content-wrapper .subscribe-form a:hover {
+  color: #0F2137;
+}
+
+main .main-wrapper .img-wrapper {
+  margin-left: 0px;
+  margin-right: 0;
+  text-align: right;
+  position: relative;
+  z-index: 1;
+}
+
+main .main-wrapper .img-wrapper img {
+  width: 100%;
+}
+
+main .main-wrapper .img-wrapper::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: #FFC845;
+  right: 40px;
+  bottom: -80px;
+}
