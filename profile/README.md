@@ -3,6 +3,7 @@
 - [纯纯看番](https://github.com/easybangumiorg/EasyBangumi)
 - [官网](https://github.com/easybangumiorg/website)
 - [社区扩展仓库](https://github.com/easybangumiorg/CommunityExtension)
+- [计划看板](https://github.com/orgs/easybangumiorg/projects/3)
 
 **如果你是开发者**
 
